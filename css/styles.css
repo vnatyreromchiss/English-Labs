@@ -1908,7 +1908,7 @@ li .menu__item .header__contacts {
 
 .do {
     background-color: #E8D1FF;
-    height: 2985px;
+    height: 2785px;
 }
 .do__container {
     /* height: 5000px; */
@@ -2191,7 +2191,11 @@ li .menu__item .header__contacts {
         margin-left: 23px;
     }
 }
-
+@media (max-width:768.98px) {
+    .faq {
+        margin-top: 130px;
+    }
+}
 
 
 
@@ -2221,6 +2225,9 @@ li .menu__item .header__contacts {
 .join__dino_mob {
     display: none;
 }
+.join__dino {
+    
+}
 .pink {
     color: #FF175C;
 }
@@ -2232,20 +2239,41 @@ li .menu__item .header__contacts {
     .join__dino {
         position:absolute;
         z-index: 1;
-        margin-top: -200px;
+        /* margin-top: -400px;
         margin-left: 200px;
-        transform: rotate(-28.99deg);
+        transform: rotate(-28.99deg); */
         /* margin-right: 100px; */
+        margin-top: -800px;
+        margin-left: -300px;
+        transform: rotate(0deg);
     }      
 }
 @media (max-width:1440px) {
     .join__dino {
-        margin-top: -800px;
+        /* margin-top: -800px; */
         margin-left: -300px;
         transform: rotate(0deg);
     }
+    /* .join__title_block {
+        position: relative;
+        z-index: 5;
+    }
+    .join__text {
+        position: relative;
+        z-index: 5;
+    }
+    .join__button_block {
+        position: relative;
+        z-index: 5;
+    }
+    .join__vector_block {
+        position: relative;
+        display: grid;
+        place-items: center;
+        z-index: 1;
+    } */
 }
-@media (max-width:1200px) {
+@media (max-width:1440px) {
     .join__vector {
         margin-left: 0;
     }
@@ -2268,6 +2296,25 @@ li .menu__item .header__contacts {
         z-index: 5;
     }
 }
+@media (max-width:1400px) {
+    .do {
+        height: 3000px;
+    }
+    .join {
+        margin-top: 300px;
+    }
+    .join__dino {
+        margin-top: -700px;
+    }
+    .join__dino {
+        display: none;
+    }
+    .join__dino_mob {
+        display: block;
+        margin-left: -150px;
+        margin-top: -400px;
+    }
+}
 @media (max-width:768.98px) {
     .join__dino {
         display: none;
@@ -2280,8 +2327,11 @@ li .menu__item .header__contacts {
     .join__dino_mob {
         position: absolute;
         display: block;
-        margin-top: -600px;
+        margin-top: -500px;
         margin-left: -170px;
+    }
+    .courses__header_block {
+        font-size: 28px;
     }
 }
 
@@ -2290,7 +2340,7 @@ li .menu__item .header__contacts {
     background-color: #8B02CC;
 }
 .contacts_head {
-    margin-top: 630px;
+    margin-top: 430px;
 }
 .contacts__container {
 }
@@ -2336,7 +2386,9 @@ li .menu__item .header__contacts {
 }
 .contacts__logo {
 }
-
+.contacts__logo_mob {
+    display: none;
+}
 
 
 .contacts__image_block {
@@ -2372,6 +2424,67 @@ li .menu__item .header__contacts {
         margin-right: 0;
     }
 }
+@media (max-width:768.98px) {
+    .contacts {
+        height: 700px;
+    }
+    .contacts__image {
+        display: none;
+    }
+    .contacts__title_block {
+        width: 300px;
+    }
+    .contacts__title {
+        margin-top: -40px;
+        font-size: 28px;
+    }
+    .contacts__text_1 {
+        font-size: 12px;
+    }
+    .contacts__button_block {
+        margin-top: 20px;
+    }
+    .contacts__socials {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .contacts__item {
+        margin-right: 20px;
+    }
+    .contacts__logo_mob {
+        display: block;
+    }
+    .contacts__logo {
+        display: none;
+    }
+    .contacts__column_1 {
+        width: 300px;
+    }
+    .contacts__column_2 {
+        margin-top: 50px;
+    }
+    .do {
+        height: 2500px;
+    }
+}
+@media (max-width:340px) {
+    .contacts__block {
+       place-items:initial ;
+    }
+    .contacts__text_1 {
+        margin-top: -110px;
+    }
+    .contacts__button_block {
+        margin-top: -90px;
+    }
+    .contacts__socials {
+        margin-top: -70px;
+    }
+    .contacts__image_mob {
+        margin-left: -20px;
+    }
+}
+
 
 .footer {
     height: 550px;
@@ -2411,6 +2524,7 @@ li .menu__item .header__contacts {
 .footer__socials {
     margin-top: 12px;
     display: flex;
+    width: 240px;
 }
 .social__item {
     margin-right: 30px;
@@ -2474,7 +2588,7 @@ li .menu__item .header__contacts {
 }
 @media (max-width:1200px) {
     .footer {
-        height: 900px;
+        height: 600px;
     }
     .footer__block {
         display: grid;
@@ -2489,9 +2603,14 @@ li .menu__item .header__contacts {
     }
     .footer__socials {
         margin-top: 30px;
+        margin-left: 30px;
     }
     .footer__column_2 {
         display: none;
+    }
+    .footer__line {
+        width: 100%;
+        margin-top: -350px;
     }
 
 }
