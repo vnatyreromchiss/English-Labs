@@ -398,6 +398,21 @@ li .menu__item .header__contacts {
 .about__dino_2 {
     display: none;
 }
+.vector {
+    position: relative;
+    animation: bounce 3s ease-in-out infinite;
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 .about__vector img {
     position: absolute;
     z-index: 1;
@@ -750,7 +765,9 @@ li .menu__item .header__contacts {
 }
 .about__talk_block__vectors {
     position: absolute;
-    margin-top: 250px;
+    margin-top: 100px;
+    animation: bounce 5s ease-in-out infinite;
+    
 }
 .about__vector_3 {
     position: relative;
@@ -770,7 +787,8 @@ li .menu__item .header__contacts {
     margin-bottom: 70px;
 }
 .about__vector_6 {
-    z-index: -1;
+    display: none;
+    z-index: 0;
     position: relative;
     margin-top: -20px;
     padding-top: 0px;
@@ -1668,6 +1686,7 @@ li .menu__item .header__contacts {
     margin-left: 100px;
 }
 .form__vector {
+    animation: bounce 5s ease-in-out infinite;
 }
 .form__vector_image {
     position: absolute;
@@ -1948,6 +1967,9 @@ li .menu__item .header__contacts {
 }
 .item_image {
 }
+.do__vectors {
+    animation: bounce 5s ease-in-out infinite;
+}
 .do__vector_1 {
     position: absolute;
     margin-top: 250px;
@@ -2031,6 +2053,9 @@ li .menu__item .header__contacts {
 .faq__title {
 
 }
+.faq__vector_block {
+    animation: bounce 5s ease-in-out infinite;
+}
 .faq__vector {
     position: absolute;
     z-index: 1;
@@ -2039,6 +2064,7 @@ li .menu__item .header__contacts {
     position: absolute;
     z-index: 1;
     display: none;
+    animation: bounce 5s ease-in-out infinite;
 }
 .faq__questions_block {
     position: relative;
@@ -2214,6 +2240,9 @@ li .menu__item .header__contacts {
     margin-top: 40px;
     display: grid;
     place-items: center;
+}
+.join__vector_block {
+    animation: bounce 5s ease-in-out infinite;
 }
 .join__vector {
     position: absolute;
